@@ -15,7 +15,7 @@
 	// Connexion à la base de données
 	try 
 	{ 
-	$bdd = new PDO('mysql:host=db555693792.db.1and1.com;dbname=db555693792', 'dbo555693792', 'Swish@5house');
+	$bdd = new PDO('mysql:host=db555693792.db.1and1.com;dbname=db555693792', 'dbo555693792', 'password');
 	} 
 	catch(Exception $e) 
 	{      
