@@ -10,7 +10,7 @@ espace membre puisse fonctionner correctement.
 
 //On se connecte a la base de donnee
 
-mysql_connect('db555693792.db.1and1.com', 'dbo555693792', 'Swish@5house');
+mysql_connect('db555693792.db.1and1.com', 'dbo555693792', 'password');
 mysql_select_db('db555693792');
 
 //Email du webmaster
