@@ -56,6 +56,6 @@ else
 }
 ?>
 		</div>
-		<div class="foot"><a href="users.php">Retour &agrave; la liste des utilisateurs</a> - <a href="http://www.supportduweb.com/">Support du Web</a></div>
+		<div class="foot"><a href="users.php">Retour &agrave; la liste des utilisateurs</a></div>
 	</body>
 </html>
