@@ -1,0 +1,84 @@
+@media all and (max-width: 960px) {
+
+	/*	Structure	*/
+	
+#main-wrapper {
+	width: 90%;
+}
+
+	/*	HEADER	*/
+
+header {
+	margin-bottom: 40px;
+}
+
+header ul {
+	width: auto;
+}
+
+header ul li {
+	margin-right: 0;
+	float: none;
+}
+
+header ul li.about {
+	background: rgb(73, 167, 137);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+header ul li.newsletter {
+	background: rgb(79, 125, 160);
+}
+
+header ul li.social {
+	background: rgb(186, 77, 64);
+}
+
+header ul li.contact {
+	background: rgb(211, 173, 83);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+header ul li a {
+	width: auto;
+}
+
+	/*	GENERAL	*/
+
+section#main-content {
+	padding: 30px 20px;
+	position: static;
+}
+	
+article section, aside {
+	width: auto !important;
+	float: none;
+}
+
+article section {
+	margin-bottom: 30px;
+}
+
+	/*	Page About me	*/
+
+body.page-aboutme article aside {
+	margin-right: 0;
+	text-align: center;
+}
+
+	/*	Page Contact	*/
+
+body.page-contact label,
+body.page-contact input,
+body.page-contact textarea {
+	display: block;
+	width: 100%;
+}
+
+body.page-contact textarea {
+	max-width: none;
+}
+
+}

@@ -1,0 +1,260 @@
+/*	Structure	*/
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+ 
+html[xmlns] .clearfix {
+    display: block;
+}
+ 
+* html .clearfix {
+    height: 1%;
+}
+
+body {
+	background-image: url(../img/bg.png);
+}
+
+#main-wrapper {
+	width: 960px;
+	margin: 50px auto;
+}
+
+	/*	RESET CSS	*/
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+	/*	HEADER	*/
+
+header ul {
+	width: 510px;
+	margin: auto;
+}
+
+header ul li {
+	text-align: center;
+	float: left;
+	margin-right: 15px;
+}
+
+header ul li.last {
+	margin-right: 0;
+}
+
+header ul li.about {
+	background: url(../img/menu_green.png) no-repeat;
+}
+
+header ul li.newsletter {
+	background: url(../img/menu_blue.png) no-repeat;
+}
+
+header ul li.social {
+	background: url(../img/menu_red.png) no-repeat;
+}
+
+header ul li.contact {
+	background: url(../img/menu_yellow.png) no-repeat;
+}
+
+header ul li a {
+	color: rgb(255, 255, 255);
+	font-family: 'Gloria Hallelujah', cursive;
+	text-decoration: none;
+	line-height: 3em;
+	width: 112px;
+	height: 55px;
+	display: block;
+}
+
+	/*	GENERAL	*/
+
+section#main-content {
+	padding: 30px 80px;
+	background-color: rgb(255, 255, 255);
+	border: 2px solid rgb(170, 170, 170);
+	border-radius: 2px;
+	position: relative;
+	bottom: 15px;
+}
+
+h1 {
+	margin-top: 0;
+	text-align: center;
+	font-family: 'Alef', sans-serif;
+}
+
+article {
+	font-family: 'Alef', sans-serif;
+	color: rgb(100, 100, 100);
+}
+
+article section, aside {	/*	On fait flotter les éléments à droite pour inverser l'ordre	*/
+	float: right;
+}
+
+article section a {
+	text-decoration: none;
+}
+
+	/*	Page About me	*/
+
+body.page-aboutme h1 {
+	color: rgb(73, 167, 137);
+}
+
+body.page-aboutme article section {	/*	On réduit la largeur de la section pour faire rentrer la aside et la section sur la même ligne	*/
+	width: 610px;
+}
+
+body.page-aboutme article aside {
+	margin-right: 30px;
+	width: 156px;
+}
+
+body.page-aboutme p {
+	margin: 0;
+}
+
+body.page-aboutme article section a {
+	color: rgb(73, 167, 137);
+}
+
+	/*	Page Contact	*/
+
+body.page-contact h1 {
+	color: rgb(211, 173, 83);
+}
+
+body.page-contact article section {	/*	On réduit la largeur de la section pour faire rentrer la aside et la section sur la même ligne	*/
+	width: 350px;
+}
+
+body.page-contact article aside {
+	width: 446px;
+}
+
+body.page-contact section ul {
+	list-style-position: inside;
+}
+
+body.page-contact section ul li {
+	margin-bottom: 10px;
+}
+
+body.page-contact ul li.cv {
+	list-style-image: url(../img/user.png);
+}
+
+body.page-contact ul li.adresse {
+	list-style-image: url(../img/map.png);
+}
+
+body.page-contact ul li.tel {
+	list-style-image: url(../img/tel.png);
+}
+
+body.page-contact ul li.email {
+	list-style-image: url(../img/mail.png);
+}
+
+body.page-contact ul li.site {
+	list-style-image: url(../img/compass.png);
+}
+
+body.page-contact label,
+body.page-contact input,
+body.page-contact textarea {
+	display: inline-block;
+}
+body.page-contact input,
+body.page-contact textarea {
+	background-color: rgb(253, 253, 253);
+	border: none;
+	width: 250px;
+}
+
+body.page-contact label {
+	width: 90px;
+}
+
+body.page-contact label[for="message"] {
+	vertical-align: top;
+}
+
+body.page-contact input {
+	height: 25px;
+}
+
+body.page-contact textarea {
+	max-width: 250px;
+	height: 200px;
+}
+
+body.page-contact article section a {
+	color: rgb(100, 100, 100);
+}
+
+/*Page Newsletter*/
+.form_col { 
+ display: inline-block; 
+ margin-right: 15px;  
+ padding: 3px 0px;  
+ width: 200px;
+ min-height: 1px;  
+ text-align: right; 
+ }
+
+input { 
+ padding: 2px;  
+ border: 1px solid #CCC; 
+ -moz-border-radius: 2px;  
+ -webkit-border-radius: 2px; 
+ border-radius: 2px; 
+ outline: none; 
+ /* Retire la bordure orange appliquée par certains navigateurs (Chrome notamment) lors du focus des éléments <input> */ 
+ }
+input:focus { 
+ border-color: rgba(82, 168, 236, 0.75); 
+ -moz-box-shadow: 0 0 8px rgba(82, 168, 236, 0.5); 
+ -webkit-box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);  
+ box-shadow: 0 0 8px rgba(82, 168, 236, 0.5); 
+ }
+.correct { 
+ border-color: rgba(68, 191, 68, 0.75);
+ }
+.correct:focus {  
+border-color: rgba(68, 191, 68, 0.75); 
+ -moz-box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);  
+ -webkit-box-shadow: 0 0 8px rgba(68, 191, 68, 0.5); 
+ box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
+ }
+.incorrect { 
+ border-color: rgba(191, 68, 68, 0.75);
+ }
+.incorrect:focus { 
+ border-color: rgba(191, 68, 68, 0.75); 
+ -moz-box-shadow: 0 0 8px rgba(191, 68, 68, 0.5); 
+ -webkit-box-shadow: 0 0 8px rgba(191, 68, 68, 0.5); 
+ box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+ }
+.tooltip { 
+ display: inline-block;  
+ margin-left: 20px; 
+ padding: 2px 4px;  
+ border: 1px solid #555; 
+ background-color: #CCC; 
+ -moz-border-radius: 4px;  
+ -webkit-border-radius: 4px; 
+ border-radius: 4px; 
+ }
+ 
