@@ -95,6 +95,6 @@ else
 	}
 }
 ?>
-		<div class="foot"><a href="<?php echo $url_home; ?>">Modifier vos identifier</a> 
+		<div class="foot"><a href="<?php echo $url_home; ?>">Modifier vos identifiants</a> 
 	</body>
 </html>
